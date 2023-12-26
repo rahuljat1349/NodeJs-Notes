@@ -14,10 +14,13 @@ app.get("/profile", (_, resp) => {
         name: "Peter",
         email: "peter@test.com",
         country: "USA",
-        skills:["PHP"]
+        skills:['JavaScript','Python','C/C++','Java','Ruby']
     };
-    resp.render("profile", {user});
+    resp.render("profile", { user });
 });
 
+app.get("/login",(_,resp)=>{
+    resp.render("login")
+})
 
 app.listen(5000);
