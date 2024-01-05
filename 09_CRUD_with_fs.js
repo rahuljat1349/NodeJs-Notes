@@ -12,14 +12,29 @@ const filePath = `${dirPath}/apple.txt`;
 // or (blocking)
 // fs.writeFileSync(filePath,'This is simple text');
 
+
+
+
+
 // Reading file
 // fs.readFile(filePath,'utf-8',(err,item)=>{
 //     console.log(item);
 // });
 
+// or 
+
+// fs.readFile(filePath,(err,item)=>{
+//     console.log(item.toString());
+// });
+
 // or a shorter way is ..(it also blocks thread)
+
 // const a = fs.readFileSync(filePath);
 // console.log(a.toString());
+
+
+
+
 
 
 // Updating file
